@@ -1,0 +1,17 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050709"><meta name="description" content="Aurelia — вымышленная планета с кольцами и спутниками. Интерактивная 3D-сцена, которая живёт вместе со скроллом."><title>Aurelia — планета, которая следует за скроллом</title><link rel="stylesheet" href="style.css"></head>
+<body class="load">
+<div id="sky"></div>
+<div id="word" aria-hidden="true">AURELIA</div>
+<canvas id="gl" role="img" aria-label="Скалистая планета с кольцами и двумя спутниками. Поворачивается и меняет вид при прокрутке."></canvas>
+<header><a class="mark" href="#c0">Aurelia</a><nav><a href="#c1">Поверхность</a><a href="#c2">Кольца</a><a href="#c3">Ядро</a><a href="#c4">Спутники</a><a href="#c5">Обзор</a></nav><span class="hud"><b id="cap">Первый контакт</b> <i id="pct">0%</i></span></header>
+<main>
+<section class="ch hero" id="c0"><p class="hl">Вымышленная планета, собранная целиком из кода. Листайте вниз: она повернётся, раскроет кольца и покажет, что у неё внутри.</p><a class="cta" href="#c1">Начать полёт</a><dl class="hr"><div><dt>Расстояние</dt><dd>4,21 а.е.</dd></div><div><dt>Спутники</dt><dd>2</dd></div><div><dt>Сутки</dt><dd>31 час</dd></div></dl><span class="hs">Листайте</span></section>
+<section class="ch" id="c1"><div class="tx"><span class="n">01</span><h2>Кратеры, хребты и солевые равнины</h2><p>Рельеф считается на видеокарте. Подойдите ближе — поверхность не размоется, потому что у неё нет текстуры: каждый кратер вычисляется заново.</p><dl><div><dt>Радиус</dt><dd>6 410 км</dd></div><div><dt>Перепад высот</dt><dd>11 км</dd></div></dl></div></section>
+<section class="ch r" id="c2"><div class="tx"><span class="n">02</span><h2>Кольца и тени друг на друге</h2><p>В кольцах есть полосы, щели и каменные обломки. Планета отбрасывает тень на кольца, а кольца — на планету. Тонкие участки пропускают свет.</p><dl><div><dt>Щели</dt><dd>2</dd></div><div><dt>Протяжённость</dt><dd>2,3 радиуса</dd></div></dl></div></section>
+<section class="ch" id="c3"><div class="tx"><span class="n">03</span><h2>Под корой — раскалённое ядро</h2><p>Четверть планеты убрана. Видны кора, мантия, внешнее и внутреннее ядро. Это дизайн вымышленного мира, а не научная модель.</p><dl><div><dt>Слоёв</dt><dd>4</dd></div><div><dt>Ядро</dt><dd>≈ 5 200 °C</dd></div></dl></div></section>
+<section class="ch r" id="c4"><div class="tx"><span class="n">04</span><h2>Нюкс и Ио</h2><p>Два спутника идут по разным орбитам. Здесь солнце за планетой: остаётся тонкий серп и светящаяся дымка атмосферы.</p><dl><div><dt>Нюкс</dt><dd>серый, холодный</dd></div><div><dt>Ио</dt><dd>серный, тёплый</dd></div></dl></div></section>
+<section class="ch c" id="c5"><div class="tx"><h2>Теперь ваш ход</h2><p>Потяните планету, чтобы повернуть её. Включите разрез, уберите кольца или смените свет.</p><div class="panel"><button id="bRings" aria-pressed="true">Кольца</button><button id="bCut" aria-pressed="false">Разрез</button><button id="bLight" aria-pressed="false">Свет: тёплый</button></div></div></section>
+</main>
+<footer><span>Aurelia · 2026</span><span>Вымышленный мир. Three.js, шейдеры, ноль текстур.</span></footer>
+<p id="nogl">Для 3D нужен браузер с WebGL. Текст страницы доступен, но планета не запустилась.</p>
+<script src="three.local.js"></script><script src="app.js"></script></body></html>
